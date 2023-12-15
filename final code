@@ -13,7 +13,7 @@ class FirstPage:
         self.l=['1','2','3','4','5','6','7','8','9','10']
 
         #========background image======
-        self.bg_frame= Image.open(r"C:\Users\HP\Pictures\Saved Pictures\backgroundpic2.jpg")
+        self.bg_frame= Image.open(r"C:\Users\ossri\Downloads\backgroundpic2.jpg")
         photo = ImageTk.PhotoImage(self.bg_frame)
         self.bg_panel = Label(self.window, image=photo)
         self.bg_panel.image = photo
@@ -28,7 +28,7 @@ class FirstPage:
         self.heading.place(x=200, y=1, width=200, height=100)
 
         #=========another image=========
-        self.side_image= Image.open(r"C:\Users\HP\Pictures\Saved Pictures\sideimage1.png")
+        self.side_image= Image.open(r"C:\Users\ossri\Downloads\sideimage1 (1).png")
         self.resize_image = self.side_image.resize((300,300))
         photo = ImageTk.PhotoImage(self.resize_image)
         self.side_image_label = Label(self.lgn_frame, image=photo, bg='#404040')
@@ -76,13 +76,13 @@ class FirstPage:
         self.lgn_frame1.place(x=700 , y=100)
 
         self.label=Label(self.lgn_frame1, text='PROGRAM TO PERFORM LIST OPERATIONS',font=('yu gothic ui',20, 'bold'), bg='#404040', fg='white' )
-        self.label.place(x=47, y=1, width=550, height=60)
+        self.label.place(x=25, y=1, width=550, height=60)
 
-        self.label=Label(self.lgn_frame1, text='This is a list of numbers from 1 to 10',font=('yu gothic ui',12, 'bold'), bg='#404040', fg='white' )
+        self.label=Label(self.lgn_frame1, text='This is a list of numbers from 1 to 10',font=('yu gothic ui',18, 'bold'), bg='#404040', fg='yellow' )
         self.label.place(x=25, y=75, width=600, height=40)
         
-        self.label=Label(self.lgn_frame1, text='Enter an operation to perform\n1.To insert an element at any position\n2.To delete an element\n3.To add an element\n4.To display the list ',font=('yu gothic ui',12, 'bold'), bg='#404040', fg='white' )
-        self.label.place(x=25, y=125, width=600, height=110)
+        self.label=Label(self.lgn_frame1, text='Enter an operation to perform\n1.To insert an element at any position\n2.To delete an element\n3.To add an element\n4.To display the list ',font=('yu gothic ui',14, 'bold'), bg='#404040', fg='white' , justify="left")
+        self.label.place(x=25, y=125, width=600, height=130)
 
         
         self.entry_var = StringVar()  # Variable to store user input
@@ -195,7 +195,7 @@ class FirstPage:
             self.label=Label(self.lgn_frame2, text="The final list is" ,font=('yu gothic ui',25, 'bold'), bg='#404040', fg='white' )
             self.label.place(x=8, y=100, width=289, height=35)
             self.label=Label(self.lgn_frame2, text=self.l ,font=('yu gothic ui',20, 'bold'), bg='#404040', fg='#FFEB3B' )
-            self.label.place(x=10, y=200, width=650, height=25)
+            self.label.place(x=10, y=200, width=650, height=35)
 
 
             back_button=Button(self.lgn_frame2, text='Back to second page',font=('yu gothic ui',12, 'bold'), command=self.open_second_page, cursor='hand2',bg='#00B7FF')
@@ -213,7 +213,7 @@ class FirstPage:
         self.label=Label(self.lgn_frame2, text="The updated list is" ,font=('yu gothic ui',20, 'bold'), bg='#404040', fg='white' )
         self.label.place(x=8, y=300, width=289, height=35)
         self.label=Label(self.lgn_frame2, text=self.l ,font=('yu gothic ui',15, 'bold'), bg='#404040', fg='#FFEB3B' )
-        self.label.place(x=10, y=335, width=650, height=25)
+        self.label.place(x=10, y=335, width=650, height=35)
 
     def updated_list1(self):
         e1= self.entry_var3.get()
@@ -222,7 +222,7 @@ class FirstPage:
         self.label=Label(self.lgn_frame2, text="The updated list is" ,font=('yu gothic ui',20, 'bold'), bg='#404040', fg='white' )
         self.label.place(x=8, y=300, width=289, height=35)
         self.label=Label(self.lgn_frame2, text=self.l ,font=('yu gothic ui',15, 'bold'), bg='#404040', fg='#FFEB3B' )
-        self.label.place(x=10, y=335, width=650, height=25)
+        self.label.place(x=10, y=335, width=650, height=35)
 
     def updated_list2(self):
         e1= self.entry_var4.get()
@@ -231,7 +231,7 @@ class FirstPage:
         self.label=Label(self.lgn_frame2, text="The updated list is" ,font=('yu gothic ui',20, 'bold'), bg='#404040', fg='white' )
         self.label.place(x=8, y=300, width=289, height=35)
         self.label=Label(self.lgn_frame2, text=self.l ,font=('yu gothic ui',15, 'bold'), bg='#404040', fg='#FFEB3B' )
-        self.label.place(x=10, y=335, width=650, height=25)
+        self.label.place(x=10, y=335, width=650, height=35)
 
 
 
